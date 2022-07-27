@@ -68,24 +68,24 @@
                     <p class="heading">SORT PRODUCTS</p>
                     <div class="sort sortbyname">
                         <p class="sortbyname_name">SORT BY NAME</p>
-                        <input type="radio" id="name" class="sortbyname_radio">
+                        <input type="radio" id="name" name="radio" class="sortradio sortbyname_radio">
                         <label for="radio">name</label>
                     </div>
                     <div class="sort sortbyprice">
                         <p class="sortbyprice_name">SORT BY PRICE</p>
-                        <input type="radio" name="price" id="price" value="low" class="sortbyprice_LTH">
+                        <input type="radio" name="price" name="radio" id="price" value="low" class="sortradio sortbyprice_LTH">
                         <label for="radio">low to high</label>
-                        <input type="radio" name="price" id="price" value="high" class="sortbyprice_HTL">
+                        <input type="radio" name="price" name="radio" id="price" value="high" class="sortradio sortbyprice_HTL">
                         <label for="radio">high to low</label>
                     </div>
                     <div class="sort sortbyrating">
                         <p class="sortbyrating_name">SORT BY RATING</p>
-                        <input type="radio" name="rating" id="rating" value="low" class="sortbyrating_LTH">
+                        <input type="radio" name="rating" name="radio" id="rating" value="low" class="sortradio sortbyrating_LTH">
                         <label for="radio">low to high</label>
-                        <input type="radio" name="rating" id="rating" value="high" class="sortbyrating_HTL">
+                        <input type="radio" name="rating" name="radio" id="rating" value="high" class="sortradio sortbyrating_HTL">
                         <label for="radio">high to low</label>
                     </div>
-                    <button class="btn clear">
+                    <button class="btn clear" onclick="clearfilter()">
                         clear
                     </button>
                     <button class="btn apply" onclick="filterapply()">
