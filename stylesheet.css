@@ -90,6 +90,7 @@ h3 {
 }
 
 .card {
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,8 +99,11 @@ h3 {
     height: 390px;
     margin: 10px;
     background-color: white;
-    box-shadow: 1px 1px 1px;
     border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 3px 3px black;
 }
 
 .card p {
