@@ -28,6 +28,11 @@ function search() {
     var value = input.toString();
     value = value.toLowerCase();
     console.log(value);
+    if (value == "phone" || value=="mobile" || value=="mobiles" || value=="phones"){
+        value="mobiles";
+    } else if (value == "footwear" || value=="clogs" || value=="shoes" || value==phones){
+        value="footwear";
+    } 
     if (arr.includes(value)) {
         window.location.href= "http://127.0.0.1:5500/" + value + ".html";
     }
