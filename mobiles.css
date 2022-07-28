@@ -130,6 +130,10 @@ body, *{
     margin-top: 10px;
 }
 
+.checked {
+    color: orange;
+}
+
 .cardimg {
     width: 100%;
     height: 80%;
