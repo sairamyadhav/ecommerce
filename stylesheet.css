@@ -57,19 +57,6 @@ body{
 
 }
 
-.main_content{
-    /* border:1px solid black; */
-     border-bottom: 1px solid black;
-    height: 55%;
-    /* display:flex; */
-    /* justify-items:center; */
-    object-fit: contain;
-    background-image: url("images/mobiles/background.jpg");
-    /* background-attachment: fixed;
-    background-repeat: no-repeat;
-    */
-    /* width: fit-content; */
-}
 
 .footer{
     /* border: 1px solid black; */
@@ -170,7 +157,7 @@ a {
     height: fit-content;
 }
 
-.electronics,.apparel{
+/* .electronics,.apparel{
     margin-left:50px ;
     width:fit-content;
     height: fit-content;
@@ -180,8 +167,25 @@ a {
 }
 .electronics{
     margin-left:150px;
-}
+} */
 
+
+.main_content{
+    /* border:1px solid black; */
+     border-bottom: 1px solid black;
+    height: 55%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* justify-items:center; */
+    object-fit: contain;
+    background-image: url("images/mobiles/background.jpg");
+
+    /* background-attachment: fixed;
+    background-repeat: no-repeat;
+    */
+    /* width: fit-content; */
+}
 
 .footer{
     text-align: center;
