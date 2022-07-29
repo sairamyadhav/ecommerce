@@ -10,7 +10,6 @@ body{
     width: 100%;
 }
 .navbar{
-    /* border:1px solid black; */
      border-bottom: 1px solid black;
     height: 15%;
     background-color: rgb(197,223,222);
@@ -18,11 +17,9 @@ body{
 
 .search_div{
     height: 50%;
-    /* border: 1px solid black; */
      border-bottom: 1px solid black;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
 }
 .menu{
@@ -59,9 +56,12 @@ body{
 
 .main_content{
     /* border:1px solid black; */
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr); */
      border-bottom: 1px solid black;
-    height: 55%;
-    /* display:flex; */
+    /* height: 55%; */
+    display:flex;
     /* justify-items:center; */
     object-fit: contain;
     background-image: url("images/mobiles/background.jpg");
@@ -198,3 +198,8 @@ a {
     margin-left:6rem ;
 
 }
+
+.menus{
+    width: 20%;
+}
+

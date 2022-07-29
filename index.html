@@ -5,8 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecommerce</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>electronics</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .electronics {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+
+        }
+        .washing,.laptops{
+            margin-left:250px
+        }
+        .main_content {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            /* grid-gap: 10px; */
+            background-color: aliceblue;
+            height: 90%;
+            width: 100%;
+        }
+
+        .img {
+            height: 500px;
+            width: 500px;
+        }
+    </style>
 
 </head>
 
@@ -19,7 +45,7 @@
                 </div>
                 <div class="space2">
                     <input type="text" placeholder="search for products" class="search">
-                    <button class="btn" onclick="search()">search</button>
+                    <button class="btn">search</button>
                 </div>
                 <div class="space3">
                     <a class="space31" href="#">my account</a>
@@ -36,11 +62,11 @@
             </div>
             <div class="menu">
                 <ul class="menu_list">
-                    <li> <a href="">HOME</a></li>
-                    <li> <a href="">BLOG</a></li>
-                    <li> <a href="">SHOP</a></li>
-                    <li> <a href="">ABOUT US</a></li>
-                    <li> <a href="">CONTACT US</a></li>
+                    <li class="div1"> <a class="div2" href="">HOME</a></li>
+                    <li class="div1"> <a class="div2" href="">BLOG</a></li>
+                    <li class="div1"> <a class="div2" href="">SHOP</a></li>
+                    <li class="div1"> <a class="div2" href="">ABOUT US</a></li>
+                    <li class="div1"> <a class="div2" href="">CONTACT US</a></li>
                 </ul>
 
 
@@ -48,49 +74,50 @@
 
         </div>
         <div class="adv">
-            <button class="btn" style="height:501px;" onclick="prev()">
-                <p style="font-size: 50px">&#8249;</p>
-            </button>
-            <img class="advlogo" src="images/mobiles/1.png" style="width:90%;height:500px;" alt="no ads..">
-            <button class="btn" style="height:501px;" onclick="next()">
-                <p style="font-size: 50px">&#8250;</p>
-            </button>
+
+            <img src="images_electronics/laptops_adv.jpg" alt="no ads.." height="500px" width="1740px">
+
         </div>
-        <h3 style="font-size:20px;text-align: center;color:azure;background-color: black;width: fit-content;margin-left:570px;border-radius: 1rem;">ALL CATEGORIES</h3>
-        <div class="main_content">
-            <div class="section1">
+        <h3
+            style="font-size:20px;text-align: center;color:azure;background-color: black;width:auto;border-radius: 1rem;">
+            ALL CATEGORIES</h3>
 
-                <div class="mobiles cat">
-                    <h3 class="type">MOBILES</h3>
-                    <a class="categ" href="mobiles.html"><img src="images/mobiles/mobiles_back.jpg" alt=""></a>
-
-                </div>
-                <div class="electronics cat">
-                    <h3 class="type">ELECTRONICS</h3>
-                    <a class="categ" href="electronics.html"><img src="images/mobiles/electronics_back.jpg" alt=""></a>
+        <div class="main_content" style="background-image: url('images/mobiles/background.jpg');">
+            <!-- <div class="sorting">
+                sort by  
+            </div> -->
 
 
-
-                </div>
-            </div>
-            <div class="section2">
-                <div class="footwear cat">
-                    <h3 class="type">FOOTWEAR</h3>
-                    <a class="categ" href="footwear.html"><img src="images/mobiles/footwear_back.jpg" alt=""></a>
-
+            <a href="mobiles.html">
+                <div class="laptops  electronics ">
+                    <img class='img' src="images_electronics/mobile_ads.jpg" alt="" >
 
                 </div>
 
-                <div class="apparel cat">
-                    <h3 class="type">APPAREL</h3>
-                    <a class="categ" href="apparel.html"><img src="images/mobiles/apparel_back1..jpg" alt="no image" height="350px" width="500px"
-                            ></a>
+            </a>
+            <a href="electronics.html">
+                <div class="bluetooth electronics">
+                    <img class='img' src="images/mobiles/electronics_back.jpg" alt="" >
+                    
+                </div>
 
+            </a>
+            <a href="apparel.html">
+                <div class="washing electronics">
+                    <img class='img' src="images/mobiles/apparel_back1..jpg" alt="" >
 
                 </div>
 
+            </a>
+            <a href="footwear.html">
+                <div class="footwear electronics">
 
-            </div>
+                    <img src="images/mobiles/footwear_back.jpg" alt="" >
+
+                </div>
+            </a>
+
+
         </div>
         <footer class="footer">
             <p>&copy; copyright act all right reserved</p>
@@ -99,7 +126,7 @@
 
         </footer>
     </div>
-<script src="index.js"></script>
+
 </body>
 
 </html>
