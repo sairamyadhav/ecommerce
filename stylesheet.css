@@ -13,19 +13,26 @@ body{
     width: 100%;
 }
 .navbar{
+<<<<<<< HEAD
+     border-bottom: 1px solid black;
+=======
     /* border:1px solid black; */
      /* border-bottom: 1px solid black; */
+>>>>>>> 8692ee73b08e7a9a94c38bf93a4c2b25589678a5
     height: 15%;
     background-color: rgb(197,223,222);
 }
 
 .search_div{
     height: 50%;
+<<<<<<< HEAD
+     border-bottom: 1px solid black;
+=======
     /* border: 1px solid black; */
      /* border-bottom: 1px solid black; */
+>>>>>>> 8692ee73b08e7a9a94c38bf93a4c2b25589678a5
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
 }
 .menu{
@@ -79,6 +86,22 @@ h3 {
 }
 
 .main_content{
+<<<<<<< HEAD
+    /* border:1px solid black; */
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr); */
+     border-bottom: 1px solid black;
+    /* height: 55%; */
+    display:flex;
+    /* justify-items:center; */
+    object-fit: contain;
+    background-image: url("images/mobiles/background.jpg");
+    /* background-attachment: fixed;
+    background-repeat: no-repeat;
+    */
+    /* width: fit-content; */
+=======
     /* border: 1px solid black; */
     display: grid;
     background-color: pink;
@@ -126,6 +149,7 @@ h3 {
 
 .cardimg {
     width: 100%;
+>>>>>>> 8692ee73b08e7a9a94c38bf93a4c2b25589678a5
 }
 
 .footer{
@@ -236,3 +260,11 @@ a {
     margin-left:6rem ;
 
 }
+<<<<<<< HEAD
+
+.menus{
+    width: 20%;
+}
+
+=======
+>>>>>>> 8692ee73b08e7a9a94c38bf93a4c2b25589678a5

@@ -5,8 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecommerce</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>electronics</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .electronics {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+
+        }
+        .washing,.laptops{
+            margin-left:250px
+        }
+        .main_content {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            /* grid-gap: 10px; */
+            background-color: aliceblue;
+            height: 90%;
+            width: 100%;
+        }
+
+        .img {
+            height: 500px;
+            width: 500px;
+        }
+    </style>
 
 </head>
 
@@ -19,7 +45,7 @@
                 </div>
                 <div class="space2">
                     <input type="text" placeholder="search for products" class="search">
-                    <button class="btn" onclick="search()">search</button>
+                    <button class="btn">search</button>
                 </div>
                 <div class="space3">
                     <a style="border:none;" class="space31" href="#">my account</a>
@@ -37,11 +63,11 @@
             
             <div class="menu">
                 <ul class="menu_list">
-                    <li> <a href="">HOME</a></li>
-                    <li> <a href="">BLOG</a></li>
-                    <li> <a href="">SHOP</a></li>
-                    <li> <a href="">ABOUT US</a></li>
-                    <li> <a href="">CONTACT US</a></li>
+                    <li class="div1"> <a class="div2" href="">HOME</a></li>
+                    <li class="div1"> <a class="div2" href="">BLOG</a></li>
+                    <li class="div1"> <a class="div2" href="">SHOP</a></li>
+                    <li class="div1"> <a class="div2" href="">ABOUT US</a></li>
+                    <li class="div1"> <a class="div2" href="">CONTACT US</a></li>
                 </ul>
 
 
@@ -49,6 +75,52 @@
 
         </div>
         <div class="adv">
+<<<<<<< HEAD
+
+            <img src="images_electronics/laptops_adv.jpg" alt="no ads.." height="500px" width="1740px">
+
+        </div>
+        <h3
+            style="font-size:20px;text-align: center;color:azure;background-color: black;width:auto;border-radius: 1rem;">
+            ALL CATEGORIES</h3>
+
+        <div class="main_content" style="background-image: url('images/mobiles/background.jpg');">
+            <!-- <div class="sorting">
+                sort by  
+            </div> -->
+
+
+            <a href="mobiles.html">
+                <div class="laptops  electronics ">
+                    <img class='img' src="images_electronics/mobile_ads.jpg" alt="" >
+
+                </div>
+
+            </a>
+            <a href="electronics.html">
+                <div class="bluetooth electronics">
+                    <img class='img' src="images/mobiles/electronics_back.jpg" alt="" >
+                    
+                </div>
+
+            </a>
+            <a href="apparel.html">
+                <div class="washing electronics">
+                    <img class='img' src="images/mobiles/apparel_back1..jpg" alt="" >
+
+                </div>
+
+            </a>
+            <a href="footwear.html">
+                <div class="footwear electronics">
+
+                    <img src="images/mobiles/footwear_back.jpg" alt="" >
+
+                </div>
+            </a>
+
+
+=======
             <button class="btn advbtn advbtnl" style="height:200px;" onclick="prev()">
                 <p style="font-size: 50px">&#8249;</p>
             </button>
@@ -85,6 +157,7 @@
                     <img class="cardimg" src="images/mobiles/mobiles_back.jpg" alt="">
                 </a>
             </div>
+>>>>>>> 8692ee73b08e7a9a94c38bf93a4c2b25589678a5
         </div>
         <footer class="footer">
             <p>&copy; copyright act all right reserved</p>
@@ -93,7 +166,11 @@
 
         </footer>
     </div>
+<<<<<<< HEAD
+
+=======
     <script src="index.js"></script>
+>>>>>>> 8692ee73b08e7a9a94c38bf93a4c2b25589678a5
 </body>
 
 </html>
