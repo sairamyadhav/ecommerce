@@ -26,6 +26,10 @@ function loadpage(){
         card.appendChild(price)
         card.appendChild(addto);
         grid.appendChild(card);
+        // card.onclick("location.href='#';")
+        card.addEventListener('click', (event) => {
+            location.href = "shoes.html";
+          });
         card.setAttribute("class","card");
         image.setAttribute("class","image1");
    }     
