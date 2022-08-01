@@ -1,5 +1,7 @@
-const array = ["iphone-11", "iphone-13", "iphone-xr", "nothing", "samsung11_a12", "samsung_a13", "oneplus9rt", "vivo v20", "oppo o20"];
+// const array = ["iphone 11", "iphone 13", "iphone xr", "iphone 6", "samsung note 5", "samsung a12", "nothing", "vivo", "oppo"];
+const array = ["iphone-11", "iphone-13", "iphone-xr", "OnePlus-9RT-1", "OnePlus-9RT-2", "oppo o20", "samsung_a13", "samsung1_a12", "nothing"]
 var currPageNumber = 1;
+
 function loadPage() {
     const middle = document.querySelector(".middle");
     middle.innerHTML = "";
@@ -8,10 +10,10 @@ function loadPage() {
         const image = document.createElement("img");
         // image.src = "images/mobiles/apple-iphone-11-1.jpg";
         const name = document.createElement("div");
-        var mname = array[Math.floor(Math.random() * 9)]
-        source1="images/mobiles/"+mname+".jpg";
-        image.src=source1;
-        name.innerHTML=mname
+        
+        let mname=array[Math.floor(Math.random() * 9)]
+        name.innerHTML = mname
+        image.src = "images/mobiles/"+mname+".jpg";
         console.log(array[Math.floor(Math.random() * 9)])
         const priceandrating = document.createElement("div");
         const price = document.createElement("p");
@@ -40,6 +42,7 @@ function loadPage() {
         priceandrating.setAttribute("class", "priceandrating");
         image.setAttribute("class", "cardimg");
         middle.appendChild(card);
+        card.setAttribute('onclick', 'my_function()');
     }
     middle.setAttribute("class", "middle");
 }
@@ -192,4 +195,8 @@ function sortByRating() {
             }
         }
     }  
+}
+
+function my_function() {
+    
 }
