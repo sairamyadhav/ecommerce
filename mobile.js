@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 // const array = ["iphone 11", "iphone 13", "iphone xr", "iphone 6", "samsung note 5", "samsung a12", "nothing", "vivo", "oppo"];
 const array = ["iphone-11", "iphone-13", "iphone-xr", "OnePlus-9RT-1", "OnePlus-9RT-2", "oppo o20", "samsung_a13", "samsung1_a12", "nothing"]
+=======
+const array = ["iphone 11", "iphone 13", "iphone xr", "iphone 6", "samsung note 5", "samsung a12", "nothing", "vivo", "oppo"];
+>>>>>>> a02f5c1c782821dcda409b170c235e6a510167ea
 var currPageNumber = 1;
 
 function loadPage() {
@@ -7,13 +11,18 @@ function loadPage() {
     middle.innerHTML = "";
     for (let i = 0; i < 24; i ++) {
         const card = document.createElement("div");
+        const innercard = document.createElement("div");
         const image = document.createElement("img");
-        // image.src = "images/mobiles/apple-iphone-11-1.jpg";
+        image.src = "images/mobiles/apple-iphone-11-1.jpg";
         const name = document.createElement("div");
+<<<<<<< HEAD
         
         let mname=array[Math.floor(Math.random() * 9)]
         name.innerHTML = mname
         image.src = "images/mobiles/"+mname+".jpg";
+=======
+        name.innerHTML = array[Math.floor(Math.random() * 9)]
+>>>>>>> a02f5c1c782821dcda409b170c235e6a510167ea
         console.log(array[Math.floor(Math.random() * 9)])
         const priceandrating = document.createElement("div");
         const price = document.createElement("p");
@@ -34,13 +43,15 @@ function loadPage() {
         priceandrating.appendChild(price);
         priceandrating.appendChild(rating);
         card.setAttribute("id", i + 1);
-        card.appendChild(image);
-        card.appendChild(name);
-        card.appendChild(priceandrating);
+        innercard.appendChild(image);
+        innercard.appendChild(name);
+        innercard.appendChild(priceandrating);
+        innercard.setAttribute("class", "innercard");
         card.setAttribute("class", "card");
         name.setAttribute("class", "name");
         priceandrating.setAttribute("class", "priceandrating");
         image.setAttribute("class", "cardimg");
+        card.appendChild(innercard);
         middle.appendChild(card);
         card.setAttribute('onclick', 'my_function()');
     }

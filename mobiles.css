@@ -68,6 +68,7 @@ body, *{
     height: 100%;
     display:grid;
     grid-template-columns: 1fr 8fr 1fr;
+<<<<<<< HEAD
     width: 100%;
 }
 
@@ -183,6 +184,100 @@ body, *{
     height: 80%;
 }
 
+=======
+    width: 100%;
+}
+
+.content {
+    border: 1px solid black;
+}
+
+/* styling filter bar */
+
+.left{
+
+}
+
+.filter {
+    border: 1px solid black;
+    height: 400px;
+}
+
+/* styling main cards */
+
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* overflow: scroll; */
+}
+
+/* left on purpose */
+
+.right {
+
+}
+
+/* styling individual card */
+
+.card {
+    /* margin: 33px;
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; */
+    margin: 33px;
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(197,223,222);
+    box-shadow: 5px 5px grey;
+}
+
+.innercard {
+    /* border: 1px solid black; */
+    position: relative;
+    top: 20px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.name {
+    border-top: 0.5px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(197,223,222);
+}
+
+.priceandrating {
+    border-top: 0.5px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.checked {
+    color: orange;
+}
+
+.cardimg {
+    width: 100%;
+    height: 80%;
+}
+
+>>>>>>> a02f5c1c782821dcda409b170c235e6a510167ea
 /* styling footer */
 
 .footer{
