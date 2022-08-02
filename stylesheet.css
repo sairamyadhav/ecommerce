@@ -126,6 +126,7 @@ body{
     border-radius: 10px;
     
 }
+
 .search:hover{
     color: rgb(28, 120, 201);
     background-color: rgb(242, 242, 242);
@@ -142,6 +143,7 @@ body{
     color: rgb(243, 248, 246);
     background-color: rgb(32, 32, 32);
 }
+
 .logo{
     height: 100%;
 }
