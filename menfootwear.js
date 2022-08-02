@@ -4,7 +4,7 @@ let grid=document.querySelector(".grid_container");
 
 function loadpage(){
     
-    for (let i = 1; i < 7; i ++) {
+    for (let i = 1; i < 8; i ++) {
         const card = document.createElement("div");
         const image = document.createElement("img");
         const name = document.createElement("div");
