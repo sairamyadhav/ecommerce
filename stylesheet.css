@@ -175,6 +175,12 @@ body{
     border-radius: 5px;
 }
 
+.space31:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
 .adv_img{
     object-fit: contain;
 }
